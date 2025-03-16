@@ -15,3 +15,19 @@ manager.display_products()
 
 # Prikaz ukupne vrednosti inventara
 print(f"\nUkupna vrednost inventara: {manager.total_inventory_value()} RSD")
+
+from cart import Cart 
+
+#Kreiranje instancu Cart
+cart = Cart()
+
+#Dodajte proizvode u korpu 
+cart.add_to_cart(product1)
+cart.add_to_cart(product2)
+cart.add_to_cart(product3)
+
+#Ispis ukupne vrednosti i proizvoda u korpi
+cart.display_cart()
+print(f"Ukupna vrednost korpe: {cart.total_cart_value()} RSD")
+
+
